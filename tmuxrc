@@ -1,4 +1,23 @@
 set -g default-terminal "screen-256color"
-set-option -g set-titles on
+
+set -g set-titles on
+set -g set-titles-string '#I | #W'
+
+set -g status-position top
+
+set -g automatic-rename on
+
+set -g window-status-current-bg colour230
+set -g window-status-current-fg black
+
+set -g base-index 1
+
+# status bar
+
+## general
 set -g status-bg black
 set -g status-fg white
+
+## left and right
+set -g status-left ''
+set -g status-right '%H:%M %-d %b %y | #h'

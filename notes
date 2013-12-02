@@ -7,3 +7,21 @@ tmux attach -t kanye    attaches to an existing tmux session named kanye
 tmux switch -t kanye    switches to an existing session named kanye
 tmux ls                 list existing tmux sessions
 tmux detach             detach (CTRL + D or logout also works)
+
+## NAVIGATING
+
+### WINDOWS
+
+Ctrl-b + ,              Rename your window
+Ctrl-b + n              Move to the next window
+Ctrl-b + p              Move to the previous window
+Ctrl-b + l              Move to the previously selected window
+Ctrl-b + w              List all windows / window numbers
+Ctrl-b <window number>  Move to the specified window number, the default bindings are from 0 – 9
+
+### PANES
+
+Ctrl-a + up             Go up a pane
+Ctrl-a + right          Go right a pane
+Ctrl-a + down           Go down a pane
+Ctrl-a + left           Go up a pane
