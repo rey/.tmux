@@ -1,0 +1,9 @@
+# Tmux commands by @reyhan
+
+## GENERAL
+
+tmux new -s kanye       creates a new tmux session named kanye
+tmux attach -t kanye    attaches to an existing tmux session named kanye
+tmux switch -t kanye    switches to an existing session named kanye
+tmux ls                 list existing tmux sessions
+tmux detach             detach (CTRL + D or logout also works)
