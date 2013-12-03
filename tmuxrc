@@ -1,26 +1,59 @@
-unbind C-b
-set -g prefix C-a
-
+# set the correct term
 set -g default-terminal "screen-256color"
 
-set -g set-titles on
-set -g set-titles-string '#I | #W'
+# unbind default Ctrl-b
+unbind C-b
 
-set -g status-position top
+# set prefix to Ctrl-a
+set -g prefix C-a
 
-set -g automatic-rename on
-
-set -g window-status-current-bg colour230
-set -g window-status-current-fg black
-
+# start window numbering at 1
 set -g base-index 1
 
-# status bar
+# turn on window titles
+set -g set-titles on
 
-## general
+# specify what titles should look like
+set -g set-titles-string '#I | #W'
+
+# ideally the status-position will be at the top but it's only supported >1.8
+set -g status-position top
+
+# automagically rename windows depending on what's running
+set -g automatic-rename on
+
+# background colour of the currently active window tab thing
+set -g window-status-current-bg colour230
+
+# foreground colour of the currently active window tab thing
+set -g window-status-current-fg black
+
+# background colour of the status bar
 set -g status-bg black
+
+# foreground colour of the status bar
 set -g status-fg white
 
-## left and right
+# status-left content
 set -g status-left ''
+
+# status-right content
 set -g status-right '%H:%M %-d %b %y | #h'
+
+# windows with activity are highlighted in the status bar
+setw -g monitor-activity on
+
+# display a status line message when activity occurs
+set -g visual-activity on
+
+# colour of status bar background
+set -g message-bg black
+
+# colour of status bar foreground
+set -g message-fg white
+
+# background border colour of a an active pane
+set -g pane-active-border-bg black
+
+# foreground border colour of a an active pane
+set -g pane-active-border-fg colour75
