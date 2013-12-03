@@ -25,3 +25,14 @@ Ctrl-a + up             Go up a pane
 Ctrl-a + right          Go right a pane
 Ctrl-a + down           Go down a pane
 Ctrl-a + left           Go up a pane
+
+## WINDOW SYMBOLS
+
+Symbol     Meaning
+
+*          Denotes the current window
+-          Marks the last window (previously selected)
+#          Window is monitored and activity has been detected
+!          A bell has occurred in the window
++          Window is monitored for content and it has appeared
+~          The window has been silent for the monitor-silence interval
