@@ -50,7 +50,7 @@ set -g status-fg white
 set -g status-left ''
 
 # status-right content
-set -g status-right '%a %H:%M %-d %B %y | #h'
+set -g status-right '%a %H:%M %e %B %y | #h'
 
 # windows with activity are highlighted in the status bar
 setw -g monitor-activity on
