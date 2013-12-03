@@ -34,6 +34,12 @@ set -g window-status-activity-bg colour230
 # foreground colour of window tab thing that has activity
 set -g window-status-activity-fg colour235
 
+# background colour of window tab thing that has bell activity
+set -g window-status-bell-bg colour230
+
+# foreground colour of window tab thing that has bell activity
+set -g window-status-bell-fg colour235
+
 # background colour of the status bar
 set -g status-bg colour235
 
