@@ -68,4 +68,5 @@ set -g message-fg white
 set -g pane-active-border-bg black
 
 # foreground border colour of a an active pane
-set -g pane-active-border-fg colour75
+# set -g pane-active-border-fg colour75
+set -g pane-active-border-fg colour219
