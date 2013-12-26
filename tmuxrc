@@ -56,7 +56,7 @@ set -g status-right '%a %H:%M %d %B %y | #h'
 setw -g monitor-activity on
 
 # display a status line message when activity occurs
-set -g visual-activity on
+# set -g visual-activity on
 
 # colour of status bar background
 set -g message-bg black
