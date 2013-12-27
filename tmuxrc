@@ -7,9 +7,6 @@ unbind C-b
 # set prefix to Ctrl-a
 set -g prefix C-a
 
-# use utf8
-set -g utf8
-
 # start window numbering at 1
 set -g base-index 1
 
