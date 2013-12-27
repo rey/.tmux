@@ -1,5 +1,5 @@
 # set the correct term
-set -g default-terminal "xterm-256color"
+set -g default-terminal "screen-256color"
 
 # unbind default Ctrl-b
 unbind C-b
