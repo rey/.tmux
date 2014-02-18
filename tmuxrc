@@ -25,6 +25,9 @@ set -g status-position top
 # automagically rename windows depending on what's running
 set -g automatic-rename on
 
+# don't wait for repeated commands
+set -g repeat-time 0
+
 # background colour of the currently active window tab thing
 set -g window-status-current-bg colour230
 
