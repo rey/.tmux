@@ -3,5 +3,5 @@
 ## Get the config
 
     cd ~
-    git clone git@github.com:rey/.tmux.git ~/.tmux
+    git clone https://github.com/rey/.tmux.git ~/.tmux
     ln -s ~/.tmux/tmuxrc ~/.tmux.conf
