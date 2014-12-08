@@ -53,7 +53,7 @@ set -g status-bg colour235
 set -g status-fg white
 
 # status-left content
-set -g status-left '#[fg=colour217](#P)'
+set -g status-left '#[bg=colour217] #[fg=colour235]#P#[bg=colour217] '
 
 # status-right content
 set -g status-right '%a %d %B %y @ %H:%M | #h'
