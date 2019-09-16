@@ -40,8 +40,6 @@ set -g pane-active-border-style fg=colour217,bg=black
 
 set -g status-style fg=white,bg=colour235
 
-set -g window-status-format " "
-
 # status-left content
 set -g status-left '#[bg=colour217] #[fg=colour235]#P '
 
