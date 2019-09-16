@@ -18,11 +18,8 @@ set -s escape-time 0
 set -g repeat-time 0
 
 #
-# Status bar is comprised of Window tabs
+# Status bar
 #
-
-# automagically rename Windows depending on what's running
-set -g automatic-rename on
 
 # set status bar position to be at the top (only supported >1.8)
 set -g status-position top
@@ -33,14 +30,20 @@ set -g status-left '(#P) '
 # status-right content
 set -g status-right '%a %d %B %y @ %H:%M | #h'
 
-# windows with activity are highlighted in the status bar
+# Monitor for activity in the window
 setw -g monitor-activity on
 
-# invert the current Window
+# Set status line style
+set -g status-style fg=black,bg=white
+
+# Set status line style for the currently active window
 set -g window-status-current-style fg=white,bg=black
 
-# status bar colours
-set -g status-style fg=black,bg=white
+# Set status line style for windows with an activity alert
+set -g window-status-activity-style none
+
+# Set status line style for windows with a bell alert
+set -g window-status-bell-style none
 
 #
 # Windows
