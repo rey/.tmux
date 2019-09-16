@@ -1,3 +1,7 @@
+#
+# Global stuff
+#
+
 # set the correct term
 set -g default-terminal "screen-256color"
 
@@ -7,41 +11,24 @@ unbind C-b
 # set prefix to Ctrl-a
 set -g prefix C-a
 
-# start window numbering at 1
-set -g base-index 1
-
-# start pane numbering at 1
-set -g pane-base-index 1
-
-# turn on window titles
-set -g set-titles on
-
-# specify what titles should look like
-set -g set-titles-string '#I | #W'
-
-# ideally the status-position will be at the top but it's only supported >1.8
-set -g status-position top
-
-# automagically rename windows depending on what's running
-set -g automatic-rename on
+# 0 delay when pressing ESC key
+set -s escape-time 0
 
 # don't wait for repeated commands
 set -g repeat-time 0
 
-set -g window-status-current-style fg=black,bg=colour230
+#
+# Status bar is comprised of Window tabs
+#
 
-set -g window-status-activity-style fg=colour235,bg=colour230
+# automagically rename Windows depending on what's running
+set -g automatic-rename on
 
-set -g window-status-bell-style fg=colour235,bg=colour230
-
-set -g message-style fg=white,bg=black
-
-set -g pane-active-border-style fg=colour217,bg=black
-
-set -g status-style fg=white,bg=colour235
+# set status bar position to be at the top (only supported >1.8)
+set -g status-position top
 
 # status-left content
-set -g status-left '#[bg=colour217] #[fg=colour235]#P '
+set -g status-left '(#P) '
 
 # status-right content
 set -g status-right '%a %d %B %y @ %H:%M | #h'
@@ -49,5 +36,26 @@ set -g status-right '%a %d %B %y @ %H:%M | #h'
 # windows with activity are highlighted in the status bar
 setw -g monitor-activity on
 
-# 0 delay when pressing ESC key /thx @karlfreeman
-set -s escape-time 0
+# status bar colours
+set -g status-style fg=black,bg=white
+
+#
+# Windows
+#
+
+# start window numbering at 1
+set -g base-index 1
+
+#
+# Panes
+#
+
+# start pane numbering at 1
+set -g pane-base-index 1
+
+#
+# Misc
+#
+
+# when you open a pane it'll show a colour on the divider
+set -g pane-active-border-style none
