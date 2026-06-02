@@ -1,7 +1,8 @@
-# My .tmux stuff
+# .tmux
 
-## Get the config
+## Install
 
-    cd ~
-    git clone https://github.com/rey/.tmux.git ~/.tmux
-    ln -s ~/.tmux/tmuxrc ~/.tmux.conf
+```
+git clone https://github.com/rey/.tmux.git ~/.tmux
+bash ~/.tmux/install.bash
+```
