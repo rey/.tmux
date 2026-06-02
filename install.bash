@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cd ~
-ln -s ~/.tmux/tmux.conf ~/.tmux.conf
+ln -sf ~/.tmux/tmux.conf ~/.tmux.conf
